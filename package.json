@@ -10,6 +10,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "gh-pages": {
+    "repo": "https://github.com/yogini-1005/MIS-Invoicing-System.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -1,0 +1,84 @@
+/* Optional: Add a light blue background for admin-specific style */
+.admin-navbar .navbar-container {
+  background-color: #f9fbff;
+}
+
+/* Optional: Add icon space (if adding icons later) */
+.nav-link::before {
+  content: "📁"; /* placeholder, can use icons */
+  margin-right: 8px;
+}
+
+/* Optional: Highlight active nav link */
+.nav-link.active {
+  background-color: #d0e8ff;
+  font-weight: bold;
+}
+
+.navbar-container {
+  width: 240px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.brand-section {
+  margin-bottom: 2rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.user-section {
+  margin-bottom: 2rem;
+}
+
+.user-greeting,
+.user-role {
+  font-weight: 600;
+}
+
+.main-nav {
+  flex-grow: 1;
+}
+
+.nav-section {
+  margin-bottom: 1.5rem;
+}
+
+.nav-section-title {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.bottom-section {
+  margin-top: auto;
+}
+
+.logout-btn {
+  padding: 0.5rem;
+  background: #e53935;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}

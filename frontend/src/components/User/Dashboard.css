@@ -1,0 +1,208 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  padding: 2rem 2rem 2rem 280px; 
+}
+
+.dashboard-main {
+   width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.dashboard-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.dashboard-section {
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.text-danger {
+  color: red;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-role {
+  font-weight: bold;
+  display: block;
+}
+
+.dashboard-content {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add these styles to your existing Dashboard.css */
+
+.invoices-section {
+  margin-top: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.invoices-table-container {
+  overflow-x: auto;
+}
+
+.invoices-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.invoices-table th,
+.invoices-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.invoices-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.invoices-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.description-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* === Invoice Card Grid Section === */
+.invoice-summary-section {
+  margin-top: 2rem;
+}
+
+.invoice-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* === Individual Invoice Card === */
+.invoice-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.invoice-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Header inside Card === */
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.invoice-header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.invoice-amount {
+  font-weight: bold;
+  color: #27ae60;
+  font-size: 1rem;
+}
+
+/* === Body Text === */
+.invoice-body p {
+  margin: 0.4rem 0;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-success {
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 0.5rem; /* spacing between buttons */
+  background-color: #27ae60; /* default green */
+}
+
+.btn-success:hover {
+  background-color: #219150; /* darker green on hover */
+}
+
+.btn-success.active {
+  background-color: #14532d; 
+}
+
+@media (max-width: 600px) {
+  .invoice-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .invoices-table th,
+  .invoices-table td {
+    padding: 8px 10px;
+  }
+}

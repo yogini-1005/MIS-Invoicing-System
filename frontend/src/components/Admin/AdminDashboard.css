@@ -1,0 +1,339 @@
+.admin-dashboard {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  padding: 2rem 2rem 2rem 280px; /* Right padding instead of left */
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dashboard-cards .card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  background: white;
+}
+
+.dashboard-cards .card h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.dashboard-cards .card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+.sparkline {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50px;
+  gap: 3px;
+  margin-top: 10px;
+}
+
+.sparkline div {
+  background: #3498db;
+  width: 8px;
+  border-radius: 3px;
+  transition: height 0.3s ease;
+}
+
+.data-visualization {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.chart-card {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.chart-card h5 {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.bar {
+  background: #3498db;
+  width: 40px;
+  border-radius: 4px;
+  position: relative;
+  transition: height 0.3s ease;
+}
+
+.bar span {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.bar small {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+.line-chart {
+  height: 150px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #eee;
+}
+
+.point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #e74c3c;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.x-axis {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.activity-feed {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.activity-feed ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.activity-feed li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-item strong {
+  color: #2c3e50;
+}
+
+.activity-item span {
+  margin: 3px 0;
+}
+
+.activity-item small {
+  color: #95a5a6;
+  font-size: 0.8rem;
+}
+
+.admin-assistant {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.assistant-container {
+  margin-top: 15px;
+}
+
+.assistant-response {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f8f9fa;
+  border-left: 3px solid #3498db;
+}
+
+.assistant-examples {
+  margin-top: 20px;
+  color: #7f8c8d;
+}
+
+.assistant-examples ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  font-size: 0.9rem;
+}
+
+.assistant-examples li {
+  padding: 5px 0;
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  .dashboard-cards,
+  .chart-container,
+  .dashboard-row {
+    flex-direction: column;
+  }
+
+  .bar-chart {
+    height: 150px;
+  }
+}
+
+/* Updated color theme with green replaced by blue (#3498db) */
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+  padding: 2rem 2rem 2rem 280px;
+}
+
+.dashboard-main {
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: #3498db; /* Changed from green to blue */
+  margin-bottom: 1rem;
+}
+
+.invoice-amount {
+  font-weight: bold;
+  color: #3498db; /* Changed from green to blue */
+  font-size: 1rem;
+}
+
+/* Rest of the styles remain the same as in your second example */
+.invoices-section,
+.invoice-card,
+.invoices-table th {
+  background-color: #ffffff;
+}
+
+.invoices-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.description-cell {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invoice-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.invoice-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.invoice-card:hover {
+  transform: translateY(-5px);
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.invoice-header h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.invoice-body p {
+  margin: 0.4rem 0;
+  font-size: 0.92rem;
+  color: #555;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .invoice-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .invoices-table th,
+  .invoices-table td {
+    padding: 8px 10px;
+  }
+}
